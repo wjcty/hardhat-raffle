@@ -43,8 +43,9 @@ developmentChains.includes(network.name)
                               assert.equal(raffleState, 0)
                               assert.equal(
                                   endingWinnerBalance.toString(),
-                                  startingWinnerBalance.add(raffleEntranceFee)
-                                      .toString
+                                  startingWinnerBalance
+                                      .add(raffleEntranceFee)
+                                      .toString()
                               )
                               assert(endingTimeStamp > startingTimeStamp)
                               resolve()

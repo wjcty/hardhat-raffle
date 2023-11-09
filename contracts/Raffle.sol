@@ -92,7 +92,6 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
 
     /* 
         1 满足条件 checkUpkeep -> chainlink调用performUpkeep 
-          即调用VRFCoordinatorV2Interface 的 requestRandomWords 获取随机数
         2 VRFConsumerBaseV2 的 fulfillRandomWords 验证随机数
      */
     /* 
